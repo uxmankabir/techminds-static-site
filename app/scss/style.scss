@@ -1,0 +1,998 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Akshar:wght@300;400;500&family=Bakbak+One&display=swap');
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper{
+  width: 1170px;
+  margin-inline: auto;
+}
+
+// Header Section
+
+header{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand{
+    display: flex;
+    align-items: center;
+    &__logo{
+      width: 83px;
+      height: 84px;
+      margin-block: 18px;
+    }
+    &__name{
+      width: 271px;
+      height: 55px;
+      margin-inline-start: -12px;
+    }
+  }
+
+  .list{
+    display: flex;
+    gap: 60px;
+    &__item{
+      list-style: none;
+    }
+    &__link{
+      font-family: 'Bakbak One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #171712;
+      position: relative;
+      cursor: pointer;
+      &:hover{
+        color: #018E0B;
+      }
+      &--active{
+        color: #018E0B;
+        &::after{
+          position: absolute;
+          content: '';
+          width: 15px;
+          border: 1.5px solid #018E0B;
+          bottom: 0;
+          right: 10px;
+        }
+      }
+    }
+  }
+
+}
+// Header Section
+
+#home{
+  padding-block: 252px;
+  .wrapper{
+    position: relative;
+    .tag-line-1{
+      font-family: 'Bakbak One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 80px;
+
+      text-transform: uppercase;
+      color: #171712;
+    }
+
+    .tag-line-2{
+      font-family: 'Bakbak One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 55px;
+      line-height: 80px;
+
+      text-transform: uppercase;
+      color: #171712;
+
+      span{
+        color: #018E0B;
+      }
+    }
+
+    .description{
+      width: 498px;
+      margin-block-start: 47px;
+
+      font-family: 'Akshar';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: #555555;
+    }
+
+    button{
+      width: 258px;
+      height: 66px;
+      margin-block-start: 47px;
+
+      background: #018E0B;
+      border-radius: 10px;
+      outline-color: transparent;
+      border: none;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding-inline: 27px;
+
+      span{
+        font-family: 'Akshar';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 26px;
+
+        color: #FFFFFF;
+      }
+
+      .icon{
+        font-size: 35px;
+        color: #FFFFFF;
+      }
+    }
+
+    img{
+      position: absolute;
+      width: 765px;
+      right: -135px;
+      top: 62px;
+    }
+
+    .bg-gradient{
+      position: absolute;
+      width: 461px;
+      height: 461px;
+      left: -80px;
+      top: -110px;
+
+      background: rgba(0, 180, 18, 0.7);
+      filter: blur(348.5px);
+      z-index: -1;
+    }
+
+    .bg-circles::before, .bg-circles::after{
+      position: absolute;
+      content: '';
+      border-radius: 100%;
+      border: 1px solid #E8DC92;
+      z-index: -2;
+      opacity: .6;
+    }
+
+    .bg-circles::before{
+      width: 839px;
+      height: 839px;
+      left: 375px;
+      top: 94px;
+    }
+
+    .bg-circles::after{
+      width: 989px;
+      height: 989px;
+      left: 300px;
+      top: 6px;
+    }
+  }
+}
+
+#about{
+  padding-block: 200px;
+  .wrapper{
+    display: flex;
+    .heading{
+      font-family: 'Bakbak One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 60px;
+
+      text-transform: uppercase;
+
+      color: #018E0B;
+    }
+
+    .description{
+      width: 502px;
+      font-family: 'Akshar';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+
+      color: #555555;
+    }
+
+    .count-section{
+      display: flex;
+      gap: 98px;
+      margin-block-start: 49px;
+    }
+
+    .project-complete{
+      display: flex;
+      flex-direction: column;
+      .count{
+        font-family: 'Abhaya Libre';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 60px;
+
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        color: #171712;
+      }
+
+      .text{
+        font-family: 'Akshar';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+
+        color: #555555;
+      }
+
+    }
+
+    .happy-clients {
+      display: flex;
+      flex-direction: column;
+      .count{
+        font-family: 'Abhaya Libre';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 60px;
+
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        color: #171712;
+      }
+
+      .text{
+        font-family: 'Akshar';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+
+        color: #555555;
+      }
+    }
+
+    .column-2{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      position: relative;
+
+      .bg-gradient{
+        position: absolute;
+        width: 605px;
+        height: 605px;
+        top: -80px;
+        background: rgba(211, 242, 213, 0.6);
+        filter: blur(150px);
+      }
+    }
+
+    .service{
+      display: flex;
+      align-items: center;
+      padding-inline: 20px;
+      background: #FFFFFF;
+
+      height: 140px;
+      width: 315px;
+
+      flex: 0 0 315px;
+
+      transform-origin: center;
+
+      .icon{
+        width: 60px;
+        height: 59.99px;
+        margin-inline-end: 10px;
+      }
+      .content{
+        display: flex;
+        flex-direction: column;
+        h2{
+          font-family: 'Akshar';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 26px;
+          margin: 0;
+
+          color: #171712;
+        }
+        span{
+          font-family: 'Akshar';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 14px;
+
+          color: #555555;
+        }
+      }
+    }
+
+
+    .service-1{
+      box-shadow: 0px 40px 40px rgba(85,85,85,.06);
+      transform: matrix(0.87, -0.5, 0.5, 0.87, -15, 15);
+    }
+
+    .service-2{
+      box-shadow: 0px 40px 40px rgba(85,85,85,.06);
+      transform: matrix(0.87, 0.5, -0.5, 0.87, 15, 15);
+    }
+
+    .service-3{
+      box-shadow: 0px 40px 40px rgba(85,85,85,.06);
+      transform: matrix(0.87, 0.5, -0.45, 0.87, -12, 80);
+    }
+
+    .service-4{
+      box-shadow: 0px 40px 40px rgba(85,85,85,.06);
+      transform: matrix(0.87, -0.5, 0.5, 0.87, 12, 80);
+    }
+
+    .diamond-circle{
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      width: 120px;
+      aspect-ratio: 1;
+      transform: translate(80px, -45px);
+      background: #fff;
+      box-shadow: 0px 40px 40px rgba(85,85,85,.06);
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 34px;
+        height: 31.99px;
+      }
+    }
+
+  }
+}
+
+#services{
+  background-color: #D3F2D5;
+  padding-block: 69px 91px;
+  .wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .heading{
+      font-family: 'Bakbak One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 52px;
+
+      text-transform: uppercase;
+      color: #171712;
+      margin: 0;
+    }
+    .description{
+      width: 432px;
+
+      font-family: 'Akshar';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+
+      text-align: center;
+      color: #555555;
+      margin-block-start: 18px;
+    }
+
+    .services{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 38px;
+      margin-block: 43px;
+    }
+
+    .service{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 364px;
+      height: 292px;
+
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 30px;
+
+      background: #F9FFF9;
+
+      img{
+        width: 82.08px;
+        height: 82.07px;
+      }
+      &__title{
+        font-family: 'Bakbak One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 52px;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #171712;
+      }
+      &__description{
+        font-family: 'Akshar';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+
+        text-align: center;
+
+        color: #555555;
+      }
+    }
+
+  }
+}
+
+#portfolio{
+  padding-block: 79px 107px;
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    position: relative;
+
+    .bg-gradient{
+      position: absolute;
+      width: 461px;
+      height: 461px;
+      top: 230px;
+      background: rgba(0, 180, 18, 0.46);
+      filter: blur(348.5px);
+      z-index: -1;
+    }
+
+    .bg-circles::before, .bg-circles::after{
+      position: absolute;
+      content: '';
+      border-radius: 100%;
+      border: 1px solid #E8DC92;
+      z-index: -2;
+      opacity: .6;
+    }
+
+    .bg-circles::before{
+      width: 696px;
+      height: 696px;
+      left: -650px;
+      top: 498px;
+    }
+
+    .bg-circles::after{
+      width: 590px;
+      height: 590px;
+      left: -600px;
+      top: 560px;
+    }
+
+    .heading{
+
+      font-family: 'Bakbak One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 68px;
+      line-height: 52px;
+
+      text-align: center;
+      text-transform: uppercase;
+
+      color: #171712;
+
+      margin: 0;
+    }
+    .description{
+      width: 317.68px;
+
+      font-family: 'Akshar';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+
+      text-align: center;
+
+      color: #555555;
+      margin-block-start: 25px;
+    }
+
+    .projects{
+      margin-block-start: 60px;
+      display: flex;
+      gap: 30px;
+
+      .project{
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #ECECEC;
+        background: #FFFFFF;
+
+        img{
+          width: 100%;
+          object-fit: cover;
+        }
+        &__title{
+          font-family: 'Bakbak One';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 30px;
+
+          color: #171712;
+          margin: 24px 0 0 0;
+        }
+        &__description{
+          font-family: 'Akshar';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+
+          color: #555555;
+          margin: 16px 0 0 0;
+        }
+      }
+
+    }
+  }
+}
+
+#team{
+  background: #F8F7F1;
+  padding-block: 85px 100px;
+  .wrapper {
+    .section-title{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .heading{
+        font-family: 'Bakbak One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 60px;
+
+        text-transform: uppercase;
+
+        color: #018E0B;
+        margin: 0;
+      }
+
+      .description{
+        width: 400px;
+        align-self: flex-end;
+
+        font-family: 'Akshar';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: right;
+        color: #555555;
+        margin-block-start: 22px;
+      }
+    }
+  }
+
+  .members{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-block-start: 109px;
+
+    .member{
+      border-radius: 19px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img{
+        width: 258px;
+        height: 302px;
+        object-fit: cover;
+        border-radius: 19px;
+      }
+
+      &__detail{
+        text-align: center;
+        background: #92E3A9;
+        border-radius: 13px;
+        height: 82px;
+        width: 207px;
+
+        transform: translateY(-50%);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+      }
+      &__name{
+        font-family: 'Akshar';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+
+        color: #05160B;
+        margin: 0;
+      }
+      &__place{
+        font-family: 'Akshar';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+
+        text-align: center;
+
+        color: #646663;
+        margin: 0;
+      }
+    }
+
+    .navigation-actions{
+      flex-basis: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+
+      .previous, .next{
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 20px;
+      }
+      .previous{
+        background: #FFFFFF;
+      }
+      .next{
+        background: #018E0B;
+        color: #FFFFFF;
+      }
+
+    }
+}
+
+#section-4{
+  display: none !important;
+
+  position: absolute;
+  width: 1440px;
+  height: 810px;
+  left: 0px;
+  top: 3517px;
+
+  background: #F8F7F1;
+
+
+
+
+
+  }
+
+}
+
+#contact{
+  background-color: #D3F2D5;
+  padding-block: 81px 88px;
+  .wrapper{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    .column-1{
+      flex: 0 0 406px;
+      height: 409px;;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .column-2{
+      .heading{
+        font-family: 'Bakbak One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 60px;
+
+        text-transform: uppercase;
+
+        color: #171712;
+      }
+      .description{
+        width: 584px;
+        font-family: 'Akshar';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 60px;
+
+        color: #000000;
+        margin: 0;
+      }
+
+      form{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 41px;
+        row-gap: 18px;
+        input{
+          flex: 1 0 45%;
+        }
+        textarea{
+          flex: 2 0 100%;
+        }
+        input, textarea{
+          border: none;
+          outline-color: transparent;
+          background: #F1F1F1;
+          border-radius: 20px;
+          padding: 6px 31px 8px 31px;
+          font-family: 'Akshar';
+          font-style: normal;
+          font-weight: 300;
+          font-size: 30px;
+          line-height: 60px;
+        }
+
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: rgba(0, 0, 0, 0.4);
+          opacity: 1; /* Firefox */
+        }
+
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+          color: rgba(0, 0, 0, 0.4);
+        }
+
+        ::-ms-input-placeholder { /* Microsoft Edge */
+          color: rgba(0, 0, 0, 0.4);
+        }
+
+        button{
+          width: 266px;
+          height: 74px;
+          margin-block-start: 46px;
+          padding: 7px 32px;
+          font-family: 'Akshar';
+          font-style: normal;
+          font-weight: 300;
+          font-size: 40px;
+          line-height: 60px;
+
+          color: #FFFFFF;
+
+          background: #018E0B;
+          border-radius: 20px;
+          border: none;
+          outline-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+footer{
+  .wrapper{
+    .columns{
+      display: flex;
+      align-items: center;
+      .column-1{
+        img{
+          margin-block: 86px;
+        }
+      }
+
+      .column-2{
+        padding-inline: 49px 185px;
+        nav{
+          .list{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            width: 40px;
+            &__item{
+              list-style: none;
+            }
+            &__link{
+              font-family: 'Akshar';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 20px;
+
+              text-transform: uppercase;
+
+              color: #555555;
+              text-decoration: none;
+              position: relative;
+              &:hover{
+                font-weight: 500;
+              }
+              &--active{
+                font-weight: 500;
+                color: #171712;
+                &::after{
+                  position: absolute;
+                  content: '';
+                  width: 12px;
+                  bottom: 0;
+                  right: 5px;
+                  border: 1px solid #171712;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .column-3{
+        h3{
+          font-family: 'Akshar';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 30px;
+
+          color: #171712;
+          margin: 0;
+        }
+        .address, .email, .phone{
+          display: flex;
+          margin-block-start: 24px;
+          .icon{
+            flex: 0 0 25px;
+            margin-block-start: 4px;
+          }
+          .text{
+            font-family: 'Akshar';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            color: #555555;
+          }
+        }
+      }
+    }
+
+    .divider{
+      border: 1px solid #018E0B;
+    }
+
+    .bottom{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-block: 28px;
+      .left{
+        display: flex;
+        align-items: center;
+        .company{
+          display: flex;
+          align-items: center;
+          margin-inline-end: 62px;
+          .name{
+            font-family: 'Bakbak One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 31px;
+
+            color: #018E0B;
+          }
+        }
+        .copyright{
+          font-family: 'Akshar';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+          padding: 0 0 0 62px;
+
+          color: #555555;
+          border-inline-start: 1px solid #DADADA;
+        }
+      }
+      .right{
+        font-family: 'Akshar';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+
+        color: #555555;
+        :first-child{
+          margin-inline-end: 28px;
+        }
+        :last-child{
+          padding-inline-start: 28px;
+          border-inline-start: 1px solid #DADADA;
+        }
+      }
+    }
+
+    .social-icons{
+      display: flex;
+      gap: 15px;
+      margin-block-start: 15px;
+      .social-icon{
+        width: 42px;
+        aspect-ratio: 1;
+        flex-basis: 0 0 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #D3F2D5;
+        border-radius: 10px;
+        color: #018E0B;
+      }
+    }
+  }
+}
