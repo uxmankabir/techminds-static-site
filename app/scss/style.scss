@@ -66,15 +66,15 @@ header{
       position: relative;
       cursor: pointer;
       &:hover{
-        color: #018E0B;
+        color: #086BB5;
       }
       &--active{
-        color: #018E0B;
+        color: #086BB5;
         &::after{
           position: absolute;
           content: '';
           width: 15px;
-          border: 1.5px solid #018E0B;
+          border: 1.5px solid #086BB5;
           bottom: 0;
           right: 10px;
         }
@@ -86,9 +86,9 @@ header{
 // Header Section
 
 #home{
-  padding-block: 252px;
   .wrapper{
     position: relative;
+    padding-block: 252px;
     .tag-line-1{
       font-family: 'Bakbak One';
       font-style: normal;
@@ -111,7 +111,7 @@ header{
       color: #171712;
 
       span{
-        color: #018E0B;
+        color: #086BB5;
       }
     }
 
@@ -124,7 +124,7 @@ header{
       font-weight: 400;
       font-size: 18px;
       line-height: 30px;
-      color: #555555;
+      color: #626262;
     }
 
     button{
@@ -132,7 +132,7 @@ header{
       height: 66px;
       margin-block-start: 47px;
 
-      background: #018E0B;
+      background: #DCBB48;
       border-radius: 10px;
       outline-color: transparent;
       border: none;
@@ -159,54 +159,46 @@ header{
       }
     }
 
-    img{
+    .hero-image{
       position: absolute;
       width: 765px;
       right: -135px;
-      top: 62px;
+      bottom: -43.67px;
     }
 
     .bg-gradient{
       position: absolute;
       width: 461px;
       height: 461px;
-      left: -80px;
-      top: -110px;
+      left: -37px;
+      top: 202px;
 
-      background: rgba(0, 180, 18, 0.7);
+      background: rgba(94, 187, 255, 0.7);
       filter: blur(348.5px);
       z-index: -1;
     }
 
-    .bg-circles::before, .bg-circles::after{
+    .bg-circles{
       position: absolute;
-      content: '';
-      border-radius: 100%;
-      border: 1px solid #E8DC92;
+      left: 393px;
+      width: 816px;
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
       z-index: -2;
-      opacity: .6;
-    }
-
-    .bg-circles::before{
-      width: 839px;
-      height: 839px;
-      left: 375px;
-      top: 94px;
-    }
-
-    .bg-circles::after{
-      width: 989px;
-      height: 989px;
-      left: 300px;
-      top: 6px;
+      .bg-circle-1{
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
     }
   }
 }
 
 #about{
-  padding-block: 200px;
   .wrapper{
     display: flex;
+    padding-block: 200px;
     .heading{
       font-family: 'Bakbak One';
       font-style: normal;
@@ -216,7 +208,7 @@ header{
 
       text-transform: uppercase;
 
-      color: #018E0B;
+      color: #086BB5;
     }
 
     .description{
@@ -227,7 +219,7 @@ header{
       font-size: 18px;
       line-height: 30px;
 
-      color: #555555;
+      color: #626262;
     }
 
     .count-section{
@@ -302,7 +294,7 @@ header{
         width: 605px;
         height: 605px;
         top: -80px;
-        background: rgba(211, 242, 213, 0.6);
+        background: #E3F3FF;
         filter: blur(150px);
       }
     }
@@ -319,6 +311,8 @@ header{
       flex: 0 0 315px;
 
       transform-origin: center;
+
+      border-radius: 25px;
 
       .icon{
         width: 60px;
@@ -352,22 +346,22 @@ header{
 
 
     .service-1{
-      box-shadow: 0px 40px 40px rgba(85,85,85,.06);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       transform: matrix(0.87, -0.5, 0.5, 0.87, -15, 15);
     }
 
     .service-2{
-      box-shadow: 0px 40px 40px rgba(85,85,85,.06);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       transform: matrix(0.87, 0.5, -0.5, 0.87, 15, 15);
     }
 
     .service-3{
-      box-shadow: 0px 40px 40px rgba(85,85,85,.06);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       transform: matrix(0.87, 0.5, -0.45, 0.87, -12, 80);
     }
 
     .service-4{
-      box-shadow: 0px 40px 40px rgba(85,85,85,.06);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       transform: matrix(0.87, -0.5, 0.5, 0.87, 12, 80);
     }
 
@@ -379,7 +373,7 @@ header{
       aspect-ratio: 1;
       transform: translate(80px, -45px);
       background: #fff;
-      box-shadow: 0px 40px 40px rgba(85,85,85,.06);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       border-radius: 100%;
       display: flex;
       justify-content: center;
@@ -394,12 +388,12 @@ header{
 }
 
 #services{
-  background-color: #D3F2D5;
-  padding-block: 69px 91px;
+  background-color: #E0F2FF;
   .wrapper{
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-block: 69px 91px;
     .heading{
       font-family: 'Bakbak One';
       font-style: normal;
@@ -446,9 +440,14 @@ header{
 
       background: #F9FFF9;
 
-      img{
-        width: 82.08px;
-        height: 82.07px;
+      &__icon{
+        background: #086BB5;
+        width: 82px;
+        aspect-ratio: 1;
+        border-radius: 100%;
+        display: grid;
+        place-items: center;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       }
       &__title{
         font-family: 'Bakbak One';
@@ -479,8 +478,8 @@ header{
 }
 
 #portfolio{
-  padding-block: 79px 107px;
   .wrapper{
+    padding-block: 79px 107px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -493,32 +492,25 @@ header{
       width: 461px;
       height: 461px;
       top: 230px;
-      background: rgba(0, 180, 18, 0.46);
+      background: #F9FFF9;
       filter: blur(348.5px);
       z-index: -1;
     }
 
-    .bg-circles::before, .bg-circles::after{
+    .bg-circles{
+      display: grid;
+      place-items: center;
       position: absolute;
-      content: '';
-      border-radius: 100%;
-      border: 1px solid #E8DC92;
-      z-index: -2;
-      opacity: .6;
-    }
-
-    .bg-circles::before{
+      bottom: -501px;
+      left: -630px;
       width: 696px;
-      height: 696px;
-      left: -650px;
-      top: 498px;
-    }
-
-    .bg-circles::after{
-      width: 590px;
-      height: 590px;
-      left: -600px;
-      top: 560px;
+      aspect-ratio: 1;
+      z-index: -2;
+      .bg-circle-3{
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
     }
 
     .heading{
@@ -596,8 +588,8 @@ header{
 
 #team{
   background: #F8F7F1;
-  padding-block: 85px 100px;
   .wrapper {
+    padding-block: 85px 100px;
     .section-title{
       display: flex;
       justify-content: space-between;
@@ -612,7 +604,7 @@ header{
 
         text-transform: uppercase;
 
-        color: #018E0B;
+        color: #0D74C1;
         margin: 0;
       }
 
@@ -652,7 +644,7 @@ header{
 
       &__detail{
         text-align: center;
-        background: #92E3A9;
+        background: #E0F2FF;
         border-radius: 13px;
         height: 82px;
         width: 207px;
@@ -710,36 +702,19 @@ header{
         background: #FFFFFF;
       }
       .next{
-        background: #018E0B;
+        background: #187CC7;
         color: #FFFFFF;
       }
 
     }
-}
-
-#section-4{
-  display: none !important;
-
-  position: absolute;
-  width: 1440px;
-  height: 810px;
-  left: 0px;
-  top: 3517px;
-
-  background: #F8F7F1;
-
-
-
-
-
   }
-
 }
+
 
 #contact{
-  background-color: #D3F2D5;
-  padding-block: 81px 88px;
+  background-color: #E0F2FF;
   .wrapper{
+    padding-block: 81px 88px;
     display: flex;
     align-items: center;
     gap: 24px;
@@ -828,7 +803,7 @@ header{
 
           color: #FFFFFF;
 
-          background: #018E0B;
+          background: #086BB5;
           border-radius: 20px;
           border: none;
           outline-color: transparent;
@@ -923,7 +898,7 @@ footer{
     }
 
     .divider{
-      border: 1px solid #018E0B;
+      border: 1px solid #171712;
     }
 
     .bottom{
@@ -935,18 +910,9 @@ footer{
         display: flex;
         align-items: center;
         .company{
+          margin-block-start: -10px;
           display: flex;
           align-items: center;
-          margin-inline-end: 62px;
-          .name{
-            font-family: 'Bakbak One';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 31px;
-
-            color: #018E0B;
-          }
         }
         .copyright{
           font-family: 'Akshar';
@@ -954,7 +920,7 @@ footer{
           font-weight: 400;
           font-size: 16px;
           line-height: 26px;
-          padding: 0 0 0 62px;
+          padding: 0 0 0 28px;
 
           color: #555555;
           border-inline-start: 1px solid #DADADA;
@@ -989,9 +955,9 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #D3F2D5;
+        background: #E0F2FF;
         border-radius: 10px;
-        color: #018E0B;
+        color: #086BB5;
       }
     }
   }
