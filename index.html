@@ -6,7 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <script src="https://kit.fontawesome.com/8fd3d3706e.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
   <link rel="stylesheet" type="text/css" href="dist/css/style.css">
+
+  <script src="./app/js/script.js" defer></script>
+
 </head>
 <body>
 
@@ -20,9 +27,10 @@
         <ul class="list">
           <li class="list__item"><a href="#home" class="list__link list__link--active">Home</a></li>
           <li class="list__item"><a href="#about" class="list__link">About</a></li>
+          <li class="list__item"><a href="#services" class="list__link">Services</a></li>
           <li class="list__item"><a href="#portfolio" class="list__link">Portfolio</a></li>
           <li class="list__item"><a href="#team" class="list__link">Team</a></li>
-          <li class="list__item"><a href="#contact" class="list__link">Contact</a></li>
+          <li class="list__item"><a href="#contact" class="list__link">Contact Us</a></li>
         </ul>
       </nav>
     </div>
@@ -217,49 +225,76 @@
       </div>
 
       <div class="members">
-
-        <div class="member">
-          <img src="./app/images/member-1.png" alt="Member Image">
-          <div class="member__detail">
-            <h2 class="member__name">Lorem Ipsum</h2>
-            <p class="member__place">Torronto, Canada</p>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="member">
+                <img src="./app/images/member-1.png" alt="Member Image">
+                <div class="member__detail">
+                  <h2 class="member__name">Lorem Ipsum</h2>
+                  <p class="member__place">Torronto, Canada</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="member">
+                <img src="./app/images/member-2.png" alt="Member Image">
+                <div class="member__detail">
+                  <h2 class="member__name">Lorem Ipsum</h2>
+                  <p class="member__place">Torronto, Canada</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="member">
+                <img src="./app/images/member-3.png" alt="Member Image">
+                <div class="member__detail">
+                  <h2 class="member__name">Lorem Ipsum</h2>
+                  <p class="member__place">Torronto, Canada</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="member">
+                <img src="./app/images/member-4.png" alt="Member Image">
+                <div class="member__detail">
+                  <h2 class="member__name">Lorem Ipsum</h2>
+                  <p class="member__place">Torronto, Canada</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="member">
+                <img src="./app/images/member-1.png" alt="Member Image">
+                <div class="member__detail">
+                  <h2 class="member__name">Lorem Ipsum</h2>
+                  <p class="member__place">Torronto, Canada</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="member">
+                <img src="./app/images/member-2.png" alt="Member Image">
+                <div class="member__detail">
+                  <h2 class="member__name">Lorem Ipsum</h2>
+                  <p class="member__place">Torronto, Canada</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="member">
-          <img src="./app/images/member-2.png" alt="Member Image">
-          <div class="member__detail">
-            <h2 class="member__name">Lorem Ipsum</h2>
-            <p class="member__place">Islamabad, Pakistan</p>
-          </div>
-        </div>
-
-        <div class="member">
-          <img src="./app/images/member-3.png" alt="Member Image">
-          <div class="member__detail">
-            <h2 class="member__name">Lorem Ipsum</h2>
-            <p class="member__place">Islamabad, Pakistan</p>
-          </div>
-        </div>
-
-        <div class="member">
-          <img src="./app/images/member-4.png" alt="Member Image">
-          <div class="member__detail">
-            <h2 class="member__name">Lorem Ipsum</h2>
-            <p class="member__place">Islamabad, Pakistan</p>
-          </div>
-        </div>
-
-        <div class="navigation-actions">
-          <div class="previous">
+        <div class="swiper-buttons">
+          <div class="swiper-buttons__prev">
             <i class="fa-solid fa-chevron-left"></i>
           </div>
-          <div class="next">
+          <div class="swiper-buttons__next">
             <i class="fa-solid fa-chevron-right"></i>
           </div>
         </div>
 
       </div>
+
     </div>
 
   </section>
@@ -301,9 +336,10 @@
             <ul class="list">
               <li class="list__item"><a href="#home" class="list__link list__link--active">Home</a></li>
               <li class="list__item"><a href="#about" class="list__link">About</a></li>
-              <li class="list__item"><a href="#services" class="list__link">Service</a></li>
+              <li class="list__item"><a href="#services" class="list__link">Services</a></li>
               <li class="list__item"><a href="#portfolio" class="list__link">Portfolio</a></li>
               <li class="list__item"><a href="#team" class="list__link">Team</a></li>
+              <li class="list__item"><a href="#contact" class="list__link">Contact Us</a></li>
             </ul>
           </nav>
         </div>
